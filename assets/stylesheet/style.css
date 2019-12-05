@@ -1,0 +1,364 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------------------- My CSS ----------------------------------- */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.padding {
+    padding: 20px 0;
+}
+.head {
+    background-color: #283D51;
+}
+.head_parent {
+    display: flex;
+    justify-content: space-between;
+    background-color: #283D51;
+}
+.drop_link {
+    background-color: #283D51;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: brown;
+    min-width: 80px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0,0,0.2);
+    z-index: 1;
+}
+.dropdown_content a {
+    color: teal;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown_content a:hover {
+    background-color: turquoise;
+
+}
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+.dropdown:hover .drop_link {
+    background-color: turquoise;
+}
+.links a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+/* ---------- section 0 ------------- */
+.head_section {
+    text-align: center;
+    background-image: linear-gradient(to bottom ,#244048, #4B9B7B);
+}
+.heading {
+    font-size: 50px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    line-height: 1.7;
+    color: white;
+}
+.para {
+    font-size: 25px;
+    padding-bottom: 70px;
+    color: white;
+}
+
+/* ------------- main section 1 --------------- */
+
+.main {
+    text-align: center;
+    padding-bottom: 80px;
+}
+.sec_1_heading {
+    color: #24384B;
+}
+.parent_sec_1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.item {
+    width: 30%;
+    height: 280px;
+    margin: 15px;
+}
+.item_sec_1 img {
+    width: 100%;
+    background-size: cover;
+}
+
+/* --------------- section 2 ------------- */
+
+.section_2 {
+    background-image: linear-gradient(to bottom, #2B4050, #4D9E7D);
+}
+.heading_sec_2 {
+    padding-top: 80px;
+    font-size: 50px;
+    color: white;
+}
+.article_2 {
+    text-align: center;
+}
+.parent_sec_2 {
+    display: flex;
+    justify-content: center;
+}
+.item_sec_2 {
+    width: 25%;
+    margin: 10px;
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: left;
+    color: white;
+}
+.btn {
+    width: 130px;
+    height: 50px;
+    border: 2px solid black;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+/* ----------------- section 3 -------------------- */
+
+.heading_sec_3 {
+    font-size: 30px;
+    padding-top: 80px;
+}
+.article_3 {
+    text-align: center;
+}
+.parent_sec_3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    line-height: 1.9;
+    text-align: left;
+}
+.name {
+    width: 600px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+}
+.email {
+    width: 600px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+}
+.phone {
+    width: 600px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+}
+.message {
+    width: 600px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    padding: 25px 0;
+}
+.btn_2 {
+    width: 130px;
+    height: 40px;
+    margin: 80px 0;
+    background-color: rgb(23, 128, 86);
+    border: 1px solid rgb(23, 128, 86);
+    border-radius: 4px;
+}
+
+/* ------------- section 4------------- */
+
+.sec_4 {
+    background-color: #BDC7D2;
+}
+.article_4 {
+    width: 100%;
+    padding: 80px 0;
+    text-align: center;
+}
+.parent_sec_4 {
+    /* display: flex;
+    justify-content: center; */
+    width: 100%;
+}
+
+
+
+/* ------------------ section 5 -------------- */
+
+.article_5 {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.sec_5_heading {
+    padding: 50px 0;
+    font-size: 30px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    
+    text-align: left;
+    padding: 8px;
+}
+th { 
+    color: #1D4862 
+}
+tr {
+  background-color: #1E2639;
+  }
+  
+tr:nth-child(even) {
+    background-color: #323C4F;
+}
+.td_color {
+    color: #884C61;
+}
+
+/* ------------- FOOTER------------- */
+
+.sec_6 {
+    background-color: #2C3E4F;
+}
+.article_6 {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+.parent_sec_6 {
+    display: flex;
+    justify-content: center;
+}
+.sec_6_item {
+    width: 30%;
+}
+.heading_footer {
+    font-size: 25px;
+    padding: 15px 0;
+}
+.para_footer {
+    font-size: 20px;
+    line-height: 1.8;
+}
+i {
+    padding: 15px 13px;
+}
+.footer_last {
+    background-color: #18242E;
+    padding: 25px 15px;
+    color: white;
+    text-align: center;
+}
+
+
+/* ------------ media ------------ */
+
+
+@media all and (max-width: 720px) {
+  .head_parent {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      justify-content: center;
+  }  
+  .parent_sec_1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .parent_sec_2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .parent_sec_6 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+}
